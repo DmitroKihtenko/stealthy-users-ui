@@ -1,0 +1,12 @@
+backend:
+  apiUrl: "http://192.168.0.101:8000/backend/v1/"
+
+institution:
+  name: "Stealthy"
+  description: "Web application for secure sharing sensitive information"
+
+pagination:
+  perPageLimit: 8
+
+routing:
+  baseUrl: "stealthy/users/ui"
