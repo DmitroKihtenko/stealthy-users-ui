@@ -1,0 +1,36 @@
+<header class="text-center bg-diluted">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-12">
+        <h2>Stealthy</h2>
+      </div>
+      <div class="col-6 px-1 py-1 d-flex">
+          <form>
+              <div class="form-row align-items-center">
+                  <div class="col-auto">
+                      <div class="input-group">
+                          <input type="text" [(ngModel)]="token" name="token" class="form-control form-control-sm bg-opposite mr-1 my-1" placeholder="Access token" value="Access token"/>
+                      </div>
+                  </div>
+                  <div class="col-auto">
+                      <button (click)="refresh()" class="btn btn-outline-main btn-block btn-sm text-truncate ml-1 my-1">
+                          <i class="fa fa-refresh"></i>
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+
+      <div class="col-3 px-1 py-1 d-flex align-items-center">
+        <button (click)="toUsers()" class="btn btn-outline-main btn-block btn-sm text-truncate">
+          Users
+        </button>
+      </div>
+      <div class="col-3 px-1 py-1 d-flex align-items-center">
+        <button (click)="toAddUser()" class="btn btn-outline-main btn-block btn-sm text-truncate">
+          New user
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,61 @@
+<div class="col">
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <h3 class="my-1 w-100 text-center text-truncate">Add new user</h3>
+    </div>
+  </div>
+  <form (submit)="onAddUser()">
+    <div class="row">
+      <div class="col my-1">
+        <div class="input-group mb-2 input-group-lg">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-opposite ml-1 my-1">
+              <i class="fa fa-user"></i>
+            </div>
+          </div>
+          <input type="text" [(ngModel)]="username" name="username" class="form-control bg-opposite mr-1 my-1" placeholder="Username" value="username"/>
+        </div>
+        <div class="input-group mb-2 input-group-lg">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-opposite ml-1 my-1">
+              <i class="fa fa-lock"></i>
+            </div>
+          </div>
+          <input type="password" [(ngModel)]="password" name="password" class="form-control bg-opposite mr-1 my-1" placeholder="Password" value="password"/>
+        </div>
+        <div class="input-group mb-2 input-group-lg">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-opposite ml-1 my-1">
+              <i class="fa fa-vcard-o"></i>
+            </div>
+          </div>
+          <input type="text" [(ngModel)]="firstName" name="first-name" class="form-control bg-opposite mr-1 my-1" placeholder="First name" value="first-name"/>
+        </div>
+        <div class="input-group mb-2 input-group-lg">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-opposite ml-1 my-1">
+              <i class="fa fa-vcard-o"></i>
+            </div>
+          </div>
+          <input type="text" [(ngModel)]="lastName" name="last-name" class="form-control bg-opposite mr-1 my-1" placeholder="Last name" value="last-name"/>
+        </div>
+        <div class="input-group mb-2 input-group-lg">
+          <div class="input-group-prepend">
+            <div class="input-group-text bg-opposite ml-1 my-1">
+              <i class="fa fa-envelope"></i>
+            </div>
+          </div>
+          <input type="email" [(ngModel)]="email" name="email" class="form-control bg-opposite mr-1 my-1" placeholder="Email" value="email"/>
+        </div>
+      </div>
+    </div>
+    <app-error-view></app-error-view>
+    <div class="row justify-content-md-center">
+      <div class="col my-1">
+        <button type="submit" class="w-100 btn btn-diluted btn-lg">
+          <i class="fa fa-floppy-o"></i> Add user
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
